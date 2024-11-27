@@ -31,7 +31,7 @@
     <div class="promo">
         <div>
             
-            <video src="vikr.mp4" autoplay muted id="myVideo"></video>
+            <video src="vikr.mp4" autoplay loop muted id="myVideo"></video>
             <button id="volumeButton" onclick="toggleVolume()">
                 <span id="icon" class="material-symbols-rounded">volume_off</span>
             </button>
@@ -69,7 +69,6 @@
             <img src="assets/li3.webp" class="listing"> 
             <img src="assets/li4.webp" class="listing"> 
             <img src="assets/li5.webp" class="listing"> 
-            
             </div>
         </div>
 
@@ -87,7 +86,6 @@
             <img src="assets/li3.webp" class="listing"> 
             <img src="assets/li4.webp" class="listing"> 
             <img src="assets/li5.webp" class="listing"> 
-            
             </div>
         </div>
 
@@ -111,5 +109,18 @@
     </section>
     
 </body>
-<script src="script.js"></script>
+<script>
+    let vid = document.getElementById("myVideo");
+let icon = document.getElementById("icon");
+
+function toggleVolume() {
+    if (vid.muted) {
+        vid.muted = false;
+        icon.textContent = 'volume_up';
+    } else {
+        vid.muted = true;
+        icon.textContent = 'volume_off';
+    }
+}
+</script>
 </html>
