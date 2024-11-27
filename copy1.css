@@ -6,13 +6,13 @@
 }
 
 
-
+/* div{
+    border: 2px solid white;
+} */
 
 
 body{
     background-color: #0F1014;
-   
-    width: auto;
 
 }
 /* navigation*/
@@ -124,7 +124,7 @@ svg{
 .promo video{
     width: 100%;
     z-index: 0;
-    margin-top: -10px;
+    margin-top: -120px;
     margin-left: -5px;
     position: relative;
     top: 0;
@@ -137,7 +137,7 @@ svg{
     opacity: 100%;
     cursor: pointer;
     position: absolute;
-    z-index:5;
+    z-index:200;
     margin-top: 400px;
     margin-left: -100px;
   }
@@ -161,7 +161,7 @@ svg{
     z-index: 5;
     width: max-content;
     margin-left: 170px;
-    margin-top: -500px;
+    margin-top: -600px;
 }
 
 
@@ -241,24 +241,28 @@ h4 #certifi{
 }
 
 .latest {
+    
+   position: relative;
+    overflow: hidden;
+    flex-wrap: nowrap;
     margin: 10px 0px; 
-    margin-left:170px; 
+    padding: 0%;
+    border: 0px;
+    margin-left:150px; 
     z-index: 5;
-    position: relative;
-    width: max-content;
-    
-    
+   
 }
 
-.flexing #line1{
-    display: grid;
-    grid-template-columns: 150px 150px 150px 150px ;
-    grid-template-rows: 150px 150px 150px 150px;
-    padding: 10px;
+
+.flexing{
+    display: flex;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
     justify-content: center;
-    gap: 10px;
-    position: sticky;
-    height: 500px;
+    height:max-content;
+   
     
  
 }
